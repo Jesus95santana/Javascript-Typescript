@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+  border: 10px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.one, .two{
+  width: 300px;
+  height: 200px;
+  border: 1px solid #000;
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+button {
+  margin: 10px;
+}
+.showinputs, .showoutput {
+  border: 1px solid #000;
+  width: 150px;
+  min-height: 20px;
+}

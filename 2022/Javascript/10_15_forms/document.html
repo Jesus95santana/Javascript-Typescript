@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Practice form</title>
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <form class="formdoc" action="/data.html" method="POST">
+
+      <section class="bread">
+        <span>Vegan Bread?</span>
+        <br>
+        <input id="bread-type-vegan" name="pizza" type="radio" value="yes">
+        <label for="bread-type-vegan">Yes</label>
+        <input id="bread-type-vegan" name="pizza" type="radio" value="no">
+        <label for="bread-type-vegan">No</label>
+        <hr>
+      </section>
+
+      <section class="sauce">
+        <label for="sauce-type">What type of sauce would you like?</label>
+        <br>
+        <input id="sauce-type" name="pizza" type="text" list="sauce-list">
+        <datalist id="sauce-list">
+          <option value="garlic"></option>
+          <option value="cheesy"></option>
+          <option value="plain"></option>
+          <option value="bacon"></option>
+          <option value="ranch"></option>
+          <option value="seasalt"></option>
+          <option value="spicy"></option>
+        </datalist>
+        <hr>
+      </section>
+
+      <section class="toppings">
+        <span>Choose any topping combination!</span>
+        <br>
+        <input id="onion" name="pizza" type="checkbox" value="onion">
+        <label for="onion">Onions<label>
+
+            <input id="bellpeppers" name="pizza" type="checkbox" value="bellpeppers">
+            <label for="bellpeppers">Bellpeppers</label>
+            <br>
+            <input id="pepperoni" name="pizza" type="checkbox" value="pepperoni">
+            <label for="pepperoni">Pepperoni</label>
+
+            <input id="cheese" name="pizza" type="checkbox" value="cheese">
+            <label for="cheese">Cheese</label>
+            <br>
+            <input id="sausage" name="pizza" type="checkbox" value="sausage">
+            <label for="sausage">Sausage</label>
+
+            <input id="bacon" name="pizza" type="checkbox" value="bacon">
+            <label for="bacon">Bacon</label>
+            <br>
+            <input id="mushrooms" name="pizza" type="checkbox" value="mushroom">
+            <label for="mushroom">Mushroom</label>
+
+            <input id="meatball" name="pizza" type="checkbox" value="meatball">
+            <label for="meatball">Meatball</label>
+            <hr>
+      </section>
+
+      <section>
+        <label for="extra-info">Extra info</label>
+        <br>
+        <textarea id="extra-info" name="pizza" rows="5" cols="25" placeholder="Additional Instructions"></textarea>
+      </section>
+
+      <input type="submit" type="send">
+    </form>
+  </main>
+  <footer></footer>
+</body>
+<script src="java.js"></script>
+
+</html>

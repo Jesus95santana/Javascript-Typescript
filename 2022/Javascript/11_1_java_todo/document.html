@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Todo</title>
+</head>
+<body>
+  <header>
+    <div class="box">
+
+      <!-- This is the form -->
+      <form id="form"  action="" >
+
+        <!-- This is the Title/Label -->
+        <label for="task" class="title"><h1>To-Do List</h1></label><br>
+
+        <!-- This is the user input -->
+        <input class="typebox" type="text" name="task" id="task" placeholder="Add an item!">
+
+        <!-- These are the buttons -->
+        <input type="submit" value="submit">
+        <input id='clearbut' type="button" value="Clear List">
+    </form>
+    <!-- The form ends here -->
+    </div>
+  </header>
+  <main>
+      <ol class="list" id="list">
+        <!-- Listed items here -->
+      </ol>
+  </main>
+  <script src="java.js"></script>
+</body>
+</html>
