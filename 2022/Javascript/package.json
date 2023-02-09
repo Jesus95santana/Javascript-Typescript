@@ -1,0 +1,13 @@
+{
+	"name": "root",
+	"version": "1.0.0",
+	"description": "root package",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"updateCheck": " (cd 10_15_forms && npm outdated); (cd 12_2_Methods_Reviewpractice && npm outdated); (cd 11_5_Conditionals && npm outdated); (cd 11_5_Functions && npm outdated); (cd 11_11_ConsoleStock && npm outdated); (cd For_loops && npm outdated); (cd 11_9_DiceTrow && npm outdated); (cd 11_8_Chicken_lay && npm outdated); (cd testingJavascript && npm outdated); (cd 1_17_mealmaker && npm outdated); (cd 10_8_javascript_modifying_html && npm outdated); (cd 3_11_javascriptAsync && npm outdated); (cd 11_1_java_todo && npm outdated); (cd 11_7_Calculator && npm outdated); (cd 11_6_Node_practice && npm outdated); (cd 11_4_java_makeError_object && npm outdated); (cd 3_4_includes_filter_map_methods && npm outdated); (cd 11_8_Classes && npm outdated); (cd 3_17_promises && npm outdated); (cd 1_16_async && npm outdated); (cd 2_11_twosumjavascript && npm outdated); (cd 11_3_Class_JS && npm outdated); (cd 10_9_event_practice_ball && npm outdated); (cd 11_10_Getters_setters && npm outdated); (cd 2_15_stopwatch && npm outdated); (cd 2_16_tictactoe && npm outdated); (cd 11_2_practice_eventHandlers && npm outdated); (cd 9_20java && npm outdated); (cd 12_2_Objects_Reviewpractice && npm outdated); (cd 4_14_teamStats && npm outdated);",
+		"updateAll": " (cd 10_15_forms && npm update); (cd 12_2_Methods_Reviewpractice && npm update); (cd 11_5_Conditionals && npm update); (cd 11_5_Functions && npm update); (cd 11_11_ConsoleStock && npm update); (cd For_loops && npm update); (cd 11_9_DiceTrow && npm update); (cd 11_8_Chicken_lay && npm update); (cd testingJavascript && npm update); (cd 1_17_mealmaker && npm update); (cd 10_8_javascript_modifying_html && npm update); (cd 3_11_javascriptAsync && npm update); (cd 11_1_java_todo && npm update); (cd 11_7_Calculator && npm update); (cd 11_6_Node_practice && npm update); (cd 11_4_java_makeError_object && npm update); (cd 3_4_includes_filter_map_methods && npm update); (cd 11_8_Classes && npm update); (cd 3_17_promises && npm update); (cd 1_16_async && npm update); (cd 2_11_twosumjavascript && npm update); (cd 11_3_Class_JS && npm update); (cd 10_9_event_practice_ball && npm update); (cd 11_10_Getters_setters && npm update); (cd 2_15_stopwatch && npm update); (cd 2_16_tictactoe && npm update); (cd 11_2_practice_eventHandlers && npm update); (cd 9_20java && npm update); (cd 12_2_Objects_Reviewpractice && npm update); (cd 4_14_teamStats && npm update);"
+	},
+	"author": "",
+	"license": "ISC"
+}

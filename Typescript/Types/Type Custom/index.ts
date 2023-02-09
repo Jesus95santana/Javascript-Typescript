@@ -36,4 +36,4 @@ let ordersArrayTS: [Pet, number][] = [
 	[Pet.Chinchilla, 50],
 ];
 // Error! NO Jerboa
-ordersArrayTS.push([Pet.Jerboa, 3]);
+// ordersArrayTS.push([Pet.Jerboa, 3]);
