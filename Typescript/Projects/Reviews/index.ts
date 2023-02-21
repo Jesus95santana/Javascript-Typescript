@@ -2,12 +2,13 @@ import reviews from "./app.js";
 
 const rootNode = document.getRootNode()!;
 const reviewImg = document.getElementsByTagName("img")[0]!;
-const reviewAuth = document.getElementById("author")!;
-const reviewJob = document.getElementById("job")!;
-const reviewInfo = document.getElementById("info")!;
-const prevBtn = document.getElementsByClassName("prev-btn")[0]!;
-const nextBtn = document.getElementsByClassName("next-btn")[0]!;
-const randomBtn = document.getElementsByClassName("random-btn")[0]!;
+const reviewAuth = document.getElementById("author") as HTMLElement;
+const reviewJob = document.getElementById("job") as HTMLElement;
+const reviewInfo = document.getElementById("info") as HTMLElement;
+const prevBtn = document.getElementsByClassName("prev-btn")[0] as HTMLElement;
+const nextBtn = document.getElementsByClassName("next-btn")[0] as HTMLElement;
+const randomBtn = document.getElementsByClassName("random-btn")[0] as HTMLElement;
+
 let currentID: number = 1;
 reviewImg.src = reviews[0].img;
 reviewAuth.innerText = reviews[0].name;
@@ -60,7 +61,7 @@ function reviewData(list: Review[], eventClass) {
 		return random(list);
 	}
 }
-function handleDOM(review: Review) {
+function handleDOM(review: Review, classLength) {
 	reviewImg.src = review.img;
 	reviewAuth.innerText = review.name;
 	reviewJob.innerText = review.job;
@@ -69,7 +70,7 @@ function handleDOM(review: Review) {
 	if (review.id == 1) {
 		prevBtn.style.visibility = "hidden";
 		nextBtn.style.visibility = "visible";
-	} else if (review.id == 4) {
+	} else if (review.id == classLength) {
 		prevBtn.style.visibility = "visible";
 		nextBtn.style.visibility = "hidden";
 	} else {
@@ -82,8 +83,6 @@ function handleButton({ target }) {
 	let handleClass = target.classList[lastClass];
 	let answer = reviewData(reviews, handleClass);
 	handleDOM(answer[0], lastClass);
-
-	console.log(currentID);
 }
 
 nextBtn.addEventListener("click", handleButton);

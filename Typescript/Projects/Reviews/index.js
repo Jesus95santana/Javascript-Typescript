@@ -51,7 +51,7 @@ function reviewData(list, eventClass) {
         return random(list);
     }
 }
-function handleDOM(review) {
+function handleDOM(review, classLength) {
     reviewImg.src = review.img;
     reviewAuth.innerText = review.name;
     reviewJob.innerText = review.job;
@@ -60,7 +60,7 @@ function handleDOM(review) {
         prevBtn.style.visibility = "hidden";
         nextBtn.style.visibility = "visible";
     }
-    else if (review.id == 4) {
+    else if (review.id == classLength) {
         prevBtn.style.visibility = "visible";
         nextBtn.style.visibility = "hidden";
     }
@@ -74,7 +74,6 @@ function handleButton({ target }) {
     let handleClass = target.classList[lastClass];
     let answer = reviewData(reviews, handleClass);
     handleDOM(answer[0], lastClass);
-    console.log(currentID);
 }
 nextBtn.addEventListener("click", handleButton);
 prevBtn.addEventListener("click", handleButton);
