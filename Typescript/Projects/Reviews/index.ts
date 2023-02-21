@@ -1,7 +1,7 @@
 import reviews from "./app.js";
 
 const rootNode = document.getRootNode()!;
-const reviewImg = document.getElementsByTagName("img")[0]!;
+const reviewImg = document.getElementsByTagName("img")[0] as HTMLImageElement;
 const reviewAuth = document.getElementById("author") as HTMLElement;
 const reviewJob = document.getElementById("job") as HTMLElement;
 const reviewInfo = document.getElementById("info") as HTMLElement;
